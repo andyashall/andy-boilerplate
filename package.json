@@ -9,6 +9,8 @@
   },
   "keywords": [
     "express",
+    "es6",
+    "babel",
     "webpack",
     "react",
     "axios",
