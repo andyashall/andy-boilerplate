@@ -9,6 +9,9 @@
 4. `npm start`
 5. navigate to http://localhost:3000 in your browser of choice.
 
+## Build for Production
+
+`npm run build`
 
 ## Overview
 
