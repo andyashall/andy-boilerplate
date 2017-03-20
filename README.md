@@ -12,14 +12,6 @@
 
 ## Overview
 
-### React by default
-The project runs with React by default and hot replacement of changes to the modules.
-
-### CSS Modules
-CSS files loaded into components are locally scoped and you can point to class names with javascript. You can also compose classes together, also from other files. These are also hot loaded. Read more about them [here](http://glenmaddern.com/articles/css-modules).
-
-To turn off CSS Modules remove it from the `webpack.config.js` file.
-
 ### Package List
 
 1. Axios
@@ -36,3 +28,11 @@ To turn off CSS Modules remove it from the `webpack.config.js` file.
 12. React-cookie
 13. Redux
 14. Timeago
+
+### React by default
+The project runs with React by default and hot replacement of changes to the modules.
+
+### CSS Modules
+CSS files loaded into components are locally scoped and you can point to class names with javascript. You can also compose classes together, also from other files. These are also hot loaded. Read more about them [here](http://glenmaddern.com/articles/css-modules).
+
+To turn off CSS Modules remove it from the `webpack.config.js` file.
