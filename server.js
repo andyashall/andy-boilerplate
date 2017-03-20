@@ -9,9 +9,6 @@ const app = express()
 const MongoClient = require('mongodb').MongoClient
   , assert = require('assert')
 const bodyParser = require('body-parser')
-const randomID = require('random-id')
-const bcrypt = require('bcryptjs')
-const saltRounds = 10
 
 const url = isDeveloping ? require("./mongo.config.js") : process.env.MONGO_URL
 
@@ -20,6 +17,8 @@ app.use(compression())
 
 app.use(require('cookie-parser')())
 app.use(require('body-parser').urlencoded({ extended: true }))
+
+require('./api')(app, url)
 
 if (isDeveloping) {
   const webpack = require('webpack')
