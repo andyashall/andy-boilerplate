@@ -5,7 +5,7 @@
 
 1. `cd andy-boilerplate`
 2. `npm install`
-3. Add you MongoDB URL to the mongo.config.js file.
+3. Add your MongoDB URL to the mongo.config.js file.
 4. `npm start`
 5. navigate to http://localhost:3000 in your browser of choice.
 
