@@ -18,20 +18,22 @@
 
 ### Package List
 
-1. Axios
-2. Babel
-3. Bycryptjs
-4. Bodyparser
-5. Cookie-parser
-6. Express
-7. MongoDB
-8. Random-id
-9. React
-10. React-redux
-11. React-router
-12. React-cookie
-13. Redux
-14. Timeago
+- `axios-^0.15.3`
+- `babel-cli-^6.4.0`
+- `bcryptjs-^2.4.3`
+- `body-parser-^1.16.1`
+- `compression-^1.6.2`
+- `cookie-parser-^1.4.3`
+- `express-^4.13.3`
+- `mongodb-^2.2.22`
+- `random-id-0.0.2`
+- `react-^0.14.3`
+- `react-cookie-^1.0.4`
+- `react-dom-^0.14.3`
+- `react-redux-^5.0.2`
+- `react-router-^3.0.2`
+- `redux-^3.6.0`
+- `time-ago-^0.1.0`
 
 ### React by default
 The project runs with React by default and hot replacement of changes to the modules.
