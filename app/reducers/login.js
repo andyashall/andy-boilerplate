@@ -1,5 +1,3 @@
-import {signIn, signOut} from '../actions'
-
 const initialState = {
 	user: {}
 }
