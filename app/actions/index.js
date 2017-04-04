@@ -5,28 +5,21 @@ export const getPosts = (data) => {
   }
 }
 
-export const savePost = (data) => {
-  return {
-    type: 'SAVE_POST',
-    data
-  }
-}
-
-export const saveVideos = (data) => {
-  return {
-    type: 'SAVE_VIDEOS',
-    data
-  }
-}
-
 export const morePosts = (prevData, data) => {
-  var allData = {
+  let allData = {
     prev: prevData,
     new: data
   }
   return {
     type: 'MORE_POSTS',
     allData
+  }
+}
+
+export const savePost = (data) => {
+  return {
+    type: 'SAVE_POST',
+    data
   }
 }
 

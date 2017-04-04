@@ -5,11 +5,7 @@ const initialState = {
 const article = (state = {}, action) => {
 	switch (action.type) {
 		case 'SAVE_POST':
-		console.log(action.data)
-			return {
-				data: action.data,
-				hello: "hello"
-			}
+			return action.data
 		case 'REMOVE_POST': 
 			return null
 		default:

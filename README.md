@@ -4,7 +4,7 @@
 `git clone https://github.com/andyashall/andy-boilerplate.git`
 
 1. `cd andy-boilerplate`
-2. `npm install`
+2. `npm i`
 3. Add your MongoDB URL to the `mongo.config.js` file.
 4. `npm start`
 5. navigate to http://localhost:3000 in your browser of choice.

@@ -21,11 +21,7 @@ const post = (state = {}, action) => {
 				data: newData
 			}
 		case 'REMOVE_POSTS': 
-			return {
-				userId: "",
-				username: "",
-				email: ""
-			}
+			return null
 		default:
 			return state
 	}
