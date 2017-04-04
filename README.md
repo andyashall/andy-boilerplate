@@ -1,7 +1,7 @@
-# Andy's Boilerplate
+# express-react-redux-webpack-boilerplate
 
 ## Install and Running
-`git clone https://github.com/andyashall/andy-boilerplate.git`
+`git clone https://github.com/andyashall/express-react-redux-webpack-boilerplate`
 
 1. `cd andy-boilerplate`
 2. `npm i`
