@@ -22,6 +22,9 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'async'
+    }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
