@@ -44,7 +44,7 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         "presets": ["es2015", "stage-0", "react"]
       }
@@ -53,7 +53,7 @@ module.exports = {
       loader: 'json'
     }, {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
+      loader: ExtractTextPlugin.extract('style-loader', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
     }]
   },
   postcss: [
