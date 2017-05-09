@@ -18,20 +18,20 @@
 
 ### Package List
 
-- `axios-^0.15.3`
+- `axios-^0.16.1`
 - `babel-cli-^6.4.0`
 - `bcryptjs-^2.4.3`
-- `body-parser-^1.16.1`
+- `body-parser-^1.17.1`
 - `compression-^1.6.2`
 - `cookie-parser-^1.4.3`
-- `express-^4.13.3`
-- `mongodb-^2.2.22`
+- `express-^4.15.2`
+- `mongodb-^2.2.26`
 - `random-id-0.0.2`
-- `react-^0.14.3`
-- `react-cookie-^1.0.4`
-- `react-dom-^0.14.3`
-- `react-redux-^5.0.2`
-- `react-router-^3.0.2`
+- `react-^15.5.4`
+- `react-cookie-^2.0.6`
+- `react-dom-^15.5.4`
+- `react-redux-^5.0.4`
+- `react-router-^3.0.5` (change to v4)
 - `redux-^3.6.0`
 - `time-ago-^0.1.0`
 
