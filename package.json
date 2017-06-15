@@ -1,6 +1,6 @@
 {
   "name": "express-react-redux-webpack-boilerplate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A boilerplate for running a Webpack workflow in Node express",
   "main": "server.js",
   "repository": {
@@ -64,7 +64,6 @@
     "css-loader": "^0.19.0",
     "eslint": "^1.5.0",
     "eslint-plugin-react": "^3.4.2",
-    "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.8.2",
     "html-webpack-plugin": "^2.28.0",
     "jscs": "^2.1.1",
