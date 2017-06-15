@@ -39,6 +39,6 @@
 The project runs with React by default and hot replacement of changes to the modules.
 
 ### CSS Modules
-CSS files loaded into components are locally scoped and you can point to class names with javascript. You can also compose classes together, also from other files. These are also hot loaded. Read more about them [here](http://glenmaddern.com/articles/css-modules).
+A **CSS Module** is a CSS file in which all class names and animation names are scoped locally by default. All URLs (`url(...)`) and `@imports` are in module request format (`./xxx` and `../xxx` means relative, `xxx` and `xxx/yyy` means in modules folder, i. e. in `node_modules`).
 
 To turn off CSS Modules remove it from the `webpack.config.js` file.

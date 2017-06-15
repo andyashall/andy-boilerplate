@@ -1,10 +1,12 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var StatsPlugin = require('stats-webpack-plugin');
+let path = require('path')
+let webpack = require('webpack')
+let HtmlWebpackPlugin = require('html-webpack-plugin')
+let ExtractTextPlugin = require('extract-text-webpack-plugin')
+let StatsPlugin = require('stats-webpack-plugin')
+// let FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+let ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -18,13 +20,17 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
-      inject: 'body',
+      template: 'app/index.tpl.ejs',
+      inject: true,
       filename: 'index.html'
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
     }),
+    // new FaviconsWebpackPlugin({
+    //   logo: './favicon.png',
+    //   inject: true
+    // }),
     new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
@@ -59,4 +65,4 @@ module.exports = {
   postcss: [
     require('autoprefixer')
   ]
-};
+}

@@ -1,8 +1,8 @@
-'use strict';
+'use strict'
 
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path')
+var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -17,13 +17,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'app/index.tpl.html',
+      template: 'app/index.tpl.ejs',
       inject: 'body',
       filename: 'index.html'
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
     })
@@ -44,4 +44,4 @@ module.exports = {
       loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]'
     }]
   }
-};
+}

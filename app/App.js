@@ -1,15 +1,17 @@
 import React from 'react'
-import style from './App.css'
+import { Route } from 'react-router'
+
+// import Home from './containers/home'
 
 export default class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {test: 'foo'}
+    this.state = {doot: 1}
   }
   render() {
     return (
-      <div className={style.app}>
-        Hi
+      <div>
+    {/* <Route exact path="/" component={Home} /> */}
       </div>
     )
   }
