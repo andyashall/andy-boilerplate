@@ -1,17 +1,20 @@
-import React from 'react'
-import { Route } from 'react-router'
+import React, {Component} from 'react'
+import {Route} from 'react-router'
 
-// import Home from './containers/home'
+import Home from './containers/home'
+import Page from './containers/page'
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {doot: 1}
-  }
+import Header from './components/header'
+import Footer from './components/footer'
+
+export default class App extends Component {
   render() {
     return (
       <div>
-    {/* <Route exact path="/" component={Home} /> */}
+        <Header />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/page' component={Page} />
+        <Footer />
       </div>
     )
   }
