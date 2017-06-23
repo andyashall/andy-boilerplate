@@ -1,18 +1,13 @@
-export const getPosts = (data) => {
+export const savePosts = (data) => {
   return {
-    type: 'GET_POSTS',
+    type: 'SAVE_POSTS',
     data
   }
 }
 
-export const morePosts = (prevData, data) => {
-  let allData = {
-    prev: prevData,
-    new: data
-  }
+export const removePosts = () => {
   return {
-    type: 'MORE_POSTS',
-    allData
+    type: 'REMOVE_POSTS'
   }
 }
 
@@ -20,6 +15,12 @@ export const savePost = (data) => {
   return {
     type: 'SAVE_POST',
     data
+  }
+}
+
+export const removePost = () => {
+  return {
+    type: 'REMOVE_POST'
   }
 }
 

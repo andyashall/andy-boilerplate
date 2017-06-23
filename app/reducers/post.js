@@ -1,16 +1,14 @@
-const initialState = {
-	article: {}
-}
+const initialState = {}
 
-const article = (state = {}, action) => {
+const post = (state = initialState, action) => {
 	switch (action.type) {
 		case 'SAVE_POST':
 			return action.data
 		case 'REMOVE_POST': 
-			return null
+			return {}
 		default:
 			return state
 	}
 }
 
-export default article
+export default post
