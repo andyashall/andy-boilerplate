@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router'
 
-import Home from './containers/home'
 import Header from './containers/header'
+import Home from './containers/home'
+import About from './containers/about'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ export default class App extends React.Component {
       <div>
         <Header />
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={Home} />
+        <Route path="/about" component={About} />
       </div>
     )
   }
