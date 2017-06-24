@@ -1,13 +1,12 @@
 # express-react-redux-webpack-boilerplate
 
 ## Install and Running
-`git clone https://github.com/andyashall/express-react-redux-webpack-boilerplate`
 
-1. `cd andy-boilerplate`
-2. `npm i`
-3. Add your MongoDB URL to the `mongo.config.js` file.
-4. `npm start`
-5. navigate to http://localhost:3000 in your browser of choice.
+1. `git clone https://github.com/andyashall/express-react-redux-webpack-boilerplate`
+2. `cd express-react-redux-webpack-boilerplate && npm i`
+4. Add your MongoDB URL to the `mongo.config.js` file.
+5. `npm start`
+6. open http://localhost:3000 in your browser.
 
 ## Build for Production
 
@@ -24,14 +23,15 @@
 - `body-parser-^1.17.1`
 - `compression-^1.6.2`
 - `cookie-parser-^1.4.3`
-- `express-^4.15.2`
-- `mongodb-^2.2.26`
+- `express-^4.15.3`
+- `mongodb-^2.2.28`
 - `random-id-0.0.2`
-- `react-^15.5.4`
-- `react-cookie-^2.0.6`
-- `react-dom-^15.5.4`
-- `react-redux-^5.0.4`
-- `react-router-^3.0.5` (change to v4)
+- `react-^15.6.1`
+- `react-cookie-^2.0.7`
+- `react-dom-^15.6.1`
+- `react-redux-^5.0.5`
+- `react-router-^4.1.1`
+- `react-router-dom-^4.1.1`
 - `redux-^3.6.0`
 - `time-ago-^0.1.0`
 
