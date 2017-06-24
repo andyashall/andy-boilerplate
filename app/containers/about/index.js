@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import css from './style.css'
+
 const style = {
   container: {
     position: 'relative',
@@ -18,7 +20,7 @@ export default class About extends Component {
   render () {
     return(
       <div style={style.container}>
-        <h1>About</h1>
+        <h1 className={css.heading}>About</h1>
         <p>This is a demo component</p>
       </div>
     )
