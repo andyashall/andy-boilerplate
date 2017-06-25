@@ -16,7 +16,7 @@ app.use(compression())
 app.use(require('cookie-parser')())
 app.use(require('body-parser').urlencoded({ extended: true }))
 
-require('./api')(app, url)
+require('./api')(app, url, MongoClient, assert)
 
 if (isDeveloping) {
   const webpack = require('webpack')
