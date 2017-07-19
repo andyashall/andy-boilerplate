@@ -1,6 +1,9 @@
 {
   "name": "express-react-redux-webpack-boilerplate",
-  "version": "0.3.0",
+  "version": "0.3.1",
+  "engines": {
+    "node": "6.11.1"
+  },
   "description": "A boilerplate for running a Webpack workflow in Node express",
   "main": "server.js",
   "repository": {
